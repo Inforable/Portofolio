@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #232e35; /* Untuk title atau judul */
+    --secondary-color: #656d72; /* Untuk text biasa seperti paragraf */
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9; /* Untuk line di pre-title*/
+
+    --primaryBackgroundColor: #fff; /* Untuk background warna putih */
+    --secondaryBackgroundColor: #fbfbfb; 
+    --thirdBackgroundColor: #f5f3fe;
+
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51e8;
+
+    --sectionPadding: 6rem 0;
+
+    --itemBorderRadius: 0.7rem; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem; /*1 rem 16px*/
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li {
+    color: var(--secondary-color); 
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container { /* Untuk membuat main container berjarak */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.btn { /* Untuk membuat button */
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid var(--borderColor);
+    cursor : pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover { /* Untuk membuat button berubah warna saat dihover atau bisa juga untuk bayangan button */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px;
+}
+
+/* Title */
+.section-title { /* Untuk mengatur title dari Berfokus di */
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title { /* Untuk Titles */
+    text-transform: uppercase; /* Untuk jadiin semua huruf kapital */
+    letter-spacing: .5rem; 
+    color: var(--secondary-color);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before { /* Untuk garis di pre-title */
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 1px;
+    background-color: var(--lineColor);
+    display: block;
+    top: 50%;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Untuk membuat grid 3 responsive */
+    gap: 3rem;
+}
+
+.nav { /* Untuk Menu Dalam Lingkup Besar */
+    display: flex; /* Agar opsi" menu berada dalam satu baris */
+    justify-content: space-between; /* Untuk membuat logo dan menu berada di sisi kanan dan kiri */
+    padding: 2rem 0;
+}
+
+.nav ul { /* Untuk Menu Dalam Lingkup Kecil*/
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: var(--primaryTextColor)
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+}
+
+.burger div { /* Burger */
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.burger { /* Untuk tampilan di mobile */
+    display: none;
+    z-index: 99;
+    position: fixed; /* Untuk membuat burger tetap berada di atas walaupun  */
+    top: 33px;
+    right: 35px;
+}
+
+#hero { /* Untuk Hero Section */
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Akan dibagi ke dalam dua kolom sama besar */
+    align-items: center;
+
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span {
+    color: var(--primaryIconColor);
+}
+
+.hero-right img { /* Untuk yang gambar */
+    width: 60%;
+}
+
+.hero-right {
+    display: flex;
+    justify-self: center;
+}
+
+/* Service Section */
+
+#services { /* Untuk Section Minat dan Bakat */
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.services .pre-title { /* Untuk Title di Section Minat dan Bakat */
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.service {
+    padding: 3rem 3rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.service-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.service-icon svg {
+    fill: var(--primaryIconColor)
+}
