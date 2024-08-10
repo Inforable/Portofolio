@@ -184,33 +184,33 @@ nav ul li a {
 
 /* Service Section */
 
-#services { /* Untuk Section Minat dan Bakat */
+#minat_bakat { /* Untuk Section Minat dan Bakat */
     background-color: var(--secondaryBackgroundColor);
     padding: var(--sectionPadding);
 }
 
-.services .pre-title { /* Untuk Title di Section Minat dan Bakat */
+.minat_bakat .pre-title { /* Untuk Title di Section Minat dan Bakat */
     margin: 0 auto;
 }
 
-.services-title {
+.minat_bakat-title {
     text-align: center;
 }
 
-.service {
+.minat {
     padding: 3rem 3rem;
     text-align: center;
     background: var(--primaryBackgroundColor);
     border-radius: var(--itemBorderRadius);
 }
 
-.service h4 {
+.minat h4 {
     margin: 1.5rem 0;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.service-icon {
+.minat-icon {
     background: var(--thirdBackgroundColor);
     width: fit-content;
     margin: 0 auto;
@@ -218,6 +218,121 @@ nav ul li a {
     border-radius: 0.5rem;
 }
 
-.service-icon svg {
+.minat-icon svg {
     fill: var(--primaryIconColor)
+}
+
+/* Projects Section */
+#projects {
+    padding: var(--sectionPadding);
+}
+
+.project {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    border: 1px solid var(--borderColor);
+}
+
+.project-cover {
+    height: 250px;
+}
+
+.project-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 2rem 1.5rem;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.project-title a svg:hover {
+    fill: var(--primaryIconColor);
+}
+
+.project-title a svg {
+    transition: .2s ease-in-out;
+}
+
+.project-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.project-tags div {
+    font-size: .9rem;
+    border: 1px solid var(--borderColor);
+    padding: .4rem 1rem;
+    color: var(--secondary-color);
+}
+
+/* Experiences */
+#experiences {
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgroundColor)
+}
+
+.pengalaman-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.pengalaman {
+    display: flex;
+    gap: 2rem;
+}
+
+.pengalaman .line {
+    padding: 0 .7rem;
+}
+
+.pengalaman .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.pengalaman-info p {
+    margin: .6rem 0 1.4rem;
+}
+
+.pengalaman-year {
+    margin-bottom: 3rem;
+}
+
+/* The dot on the line */
+.pengalaman .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right ul {
+    line-height: 2rem;
+    padding: 0.1rem;
 }
