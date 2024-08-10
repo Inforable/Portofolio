@@ -326,13 +326,13 @@ nav ul li a {
     left: -6px;
 }
 
-.skills-list {
+.awards-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 1.5rem;
 }
 
-.skills-right ul {
+.awards-right ul {
     line-height: 2rem;
     padding: 0.1rem;
 }
