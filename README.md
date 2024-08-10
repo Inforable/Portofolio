@@ -1,6 +1,6 @@
 # Portofolio
 
-# Projek yang dibuat adalah portofolio sederhana yang berisi nama, foto diri, penjelasan singkat mengenai diri sendiri, minat bakat, proyek yang pernah dibuat, pengalaman organisasi, prestasi dan kontak diri serta resume
+## Projek yang dibuat adalah portofolio sederhana yang berisi nama, foto diri, penjelasan singkat mengenai diri sendiri, minat bakat, proyek yang pernah dibuat, pengalaman organisasi, prestasi dan kontak diri serta resume
 
 # Pembuatan portofolio ini menggunakan HTML, CSS dan Javascript dengan menggunakan Microsoft Visual Studio sebagai IDE
 
