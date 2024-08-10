@@ -288,6 +288,7 @@ nav ul li a {
 
 .pengalaman-grid {
     display: grid;
+    gap: 10rem;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
@@ -297,7 +298,7 @@ nav ul li a {
 }
 
 .pengalaman .line {
-    padding: 0 .7rem;
+    padding: 0 0.7rem;
 }
 
 .pengalaman .line div {
@@ -328,11 +329,10 @@ nav ul li a {
 
 .awards-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
-.awards-right ul {
+.-right ul {
     line-height: 2rem;
     padding: 0.1rem;
 }
